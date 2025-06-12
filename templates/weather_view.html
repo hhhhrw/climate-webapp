@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Climate Data</title>
+</head>
+<body>
+    <h1>Search Weather Stations</h1>
+    <form action="/weather/results" method="post">
+        <label>State:</label>
+        <select name="state">
+            <option value="NSW">NSW</option>
+            <option value="VIC">VIC</option>
+            <option value="WA">WA</option>
+            <option value="ACT">ACT</option>
+        </select><br><br>
+
+        <label>Latitude range (we use year as mock):</label>
+        <input type="number" name="lat_min" value="1970"> to
+        <input type="number" name="lat_max" value="2020"><br><br>
+
+        <label>Climate Measure:</label>
+        <select name="measure">
+            <option value="min_temp">Min Temperature</option>
+            <option value="max_rainfall">Max Rainfall</option>
+        </select><br><br>
+
+        <label>Order:</label>
+        <select name="order">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+        </select><br><br>
+
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>

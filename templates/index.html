@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Landing Page</title>
+</head>
+<body>
+    <h1>Welcome to the Climate Change Web App</h1>
+
+    <h2>Key Climate Facts</h2>
+    <ul>
+        <li>Year range: {{ data.year_range[0] }} to {{ data.year_range[1] }}</li>
+        <li>Coldest station: {{ data.coldest_station[0] }} ({{ data.coldest_station[1] }}°C)</li>
+        <li>Wettest station: {{ data.wettest_station[0] }} ({{ data.wettest_station[1] }} mm)</li>
+        <li>State with most stations: {{ data.most_stations_state[0] }} ({{ data.most_stations_state[1] }} stations)</li>
+    </ul>
+</body>
+</html>
